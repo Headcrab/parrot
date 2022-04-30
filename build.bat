@@ -1,0 +1,2 @@
+cls
+pyinstaller histdump.spec
