@@ -360,4 +360,6 @@ l = []
 rc_rows(tree_menu, i, f, l)
 for it in l:
     print(f'{it["id"]}|{it["Name"]}|{it["value"]}')
+    
+print(l)
        
