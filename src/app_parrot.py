@@ -1,3 +1,4 @@
+from numpy import save
 from model import *
 class app_parrot:
     def __init__(self):
@@ -26,13 +27,16 @@ class app_parrot:
         m3.execute()
         m3['Кошелек']['Рублей в кошелке'].value = 666
         m3.execute()
-        m3.save(SQLiteSerialiser('base.sqlite','Модель 3'))
+        m3.save(SQLiteSerialiser('./db/base.sqlite','Модель 3'))
+        m3.save(BJsonSerialiser('./models/модель 3.pkl')) 
 
-        # # m4 = Model('Модель 4')
-        # # m4.load(SQLiteSerialiser('base.sqlite','Модель 3'))
+        # m4 = Model('Модель 4')
+        # m4.load(SQLiteSerialiser('base.sqlite','Модель 3'))
         # m4 = SQLiteSerialiser('base.sqlite', 'Модель 3').load()
-        # m4.name = 'Модель 4'
-        # m4['Курс валют'].add(CurrProperty('Рупия', 'INR'))
-        # m4['Обменник'].add(LinkedProperty('Курс рупии', 'Курс валют.Рупия'))
-        # m4['Обменник'].add(CalculatedProperty('Рупий в кошельке', 'Рублей в кошелке/Курс рупии'))
-        # m4.execute()    
+        m4 = BJsonSerialiser('./models/модель 3.pkl').load()
+        m4.name = 'Модель 4'
+        m4['Курс валют'].add(CurrProperty('Рупия', 'INR'))
+        m4['Обменник'].add(LinkedProperty('Курс рупии', 'Курс валют.Рупия'))
+        m4['Обменник'].add(CalculatedProperty('Рупий в кошельке', 'Рублей в кошелке/Курс рупии'))
+        m4.execute()   
+        make_svg_from_model(m4, './models/модель 4.svg') 

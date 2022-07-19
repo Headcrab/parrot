@@ -248,3 +248,38 @@ class CurrProperty(Property):
         self.value = data['Valute'][self.charCode]['Value']/data['Valute'][self.charCode]['Nominal'] if len(data)>0 else '0.0'
         super().execute()
 
+
+# svg draw
+def draw_text_in_box(f: object, text: str, x: int, y: int, width: int, height: int, color: str) -> None:
+    f.write(
+        f'<rect x="{x}" y="{y}" width="{width}" height="{height}" style="fill:{color};stroke:black;stroke-width:1"/>\n')
+    f.write(
+        f'<text x="{x + width / 2}" y="{y + height / 2+5}" text-anchor="middle">{text}</text>\n')
+
+
+def make_svg_from_model(model: Model, file_name: str) -> None:
+    with open(file_name, 'w', encoding='utf-8') as f:
+        f.write('<svg xmlns="http://www.w3.org/2000/svg"\n'
+                '    xmlns:xlink="http://www.w3.org/1999/xlink"\n'
+                '    width="1000px"\n'
+                '    height="1000px">\n')
+        item_width = 1000 / len(model)-20
+        item_number = 0
+        for key, value in model.items():
+            box_color = '#ccc'
+            draw_text_in_box(f, key, item_number * item_width +
+                             10, 10, item_width-10, 50, box_color)
+            property_number = 0
+            for key2, value2 in value.items():
+                box_color = '#cbb'
+                val = value2.value
+                try:
+                    val = str(round(float(value2.value), 4))
+                except:
+                    pass
+                draw_text_in_box(f, f'{key2} = {val}', item_number *
+                                 item_width+10, property_number * 50 + 60, item_width-10, 50, box_color)
+                property_number += 1
+            item_number += 1
+        f.write('</svg>\n')
+

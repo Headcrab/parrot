@@ -4,7 +4,7 @@ import requests
 import os
 import uuid
 
-YOUTUBE_API_KEY = "AIzaSyBqnxoxriNrSJhV9e-Jenz8LMA7b6S9OOw"
+YOUTUBE_API_KEY = os.environ.get('YOUTUBE_API_KEY')
 
 # get YouTube channelId by channel name
 def getChannelId(channelName):

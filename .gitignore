@@ -365,3 +365,4 @@ FodyWeavers.xsd
 *.bak
 data.json
 /channels
+.env

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    width="1000px"
+    height="1000px">
+<rect x="10.0" y="10" width="303.3333333333333" height="50" style="fill:#ccc;stroke:black;stroke-width:1"/>
+<text x="161.66666666666666" y="40.0" text-anchor="middle">Курс валют</text>
+<rect x="10.0" y="60" width="303.3333333333333" height="50" style="fill:#cbb;stroke:black;stroke-width:1"/>
+<text x="161.66666666666666" y="90.0" text-anchor="middle">Доллар = 56.5616</text>
+<rect x="10.0" y="110" width="303.3333333333333" height="50" style="fill:#cbb;stroke:black;stroke-width:1"/>
+<text x="161.66666666666666" y="140.0" text-anchor="middle">Евро = 57.1526</text>
+<rect x="10.0" y="160" width="303.3333333333333" height="50" style="fill:#cbb;stroke:black;stroke-width:1"/>
+<text x="161.66666666666666" y="190.0" text-anchor="middle">Тенге = 0.1177</text>
+<rect x="10.0" y="210" width="303.3333333333333" height="50" style="fill:#cbb;stroke:black;stroke-width:1"/>
+<text x="161.66666666666666" y="240.0" text-anchor="middle">Рупия = 0.7123</text>
+<rect x="323.3333333333333" y="10" width="303.3333333333333" height="50" style="fill:#ccc;stroke:black;stroke-width:1"/>
+<text x="475.0" y="40.0" text-anchor="middle">Кошелек</text>
+<rect x="323.3333333333333" y="60" width="303.3333333333333" height="50" style="fill:#cbb;stroke:black;stroke-width:1"/>
+<text x="475.0" y="90.0" text-anchor="middle">Рублей в кошелке = 666.0</text>
+<rect x="636.6666666666666" y="10" width="303.3333333333333" height="50" style="fill:#ccc;stroke:black;stroke-width:1"/>
+<text x="788.3333333333333" y="40.0" text-anchor="middle">Обменник</text>
+<rect x="636.6666666666666" y="60" width="303.3333333333333" height="50" style="fill:#cbb;stroke:black;stroke-width:1"/>
+<text x="788.3333333333333" y="90.0" text-anchor="middle">Курс тенге = 0.1177</text>
+<rect x="636.6666666666666" y="110" width="303.3333333333333" height="50" style="fill:#cbb;stroke:black;stroke-width:1"/>
+<text x="788.3333333333333" y="140.0" text-anchor="middle">Курс доллара = 56.5616</text>
+<rect x="636.6666666666666" y="160" width="303.3333333333333" height="50" style="fill:#cbb;stroke:black;stroke-width:1"/>
+<text x="788.3333333333333" y="190.0" text-anchor="middle">Рублей в кошелке = 666.0</text>
+<rect x="636.6666666666666" y="210" width="303.3333333333333" height="50" style="fill:#cbb;stroke:black;stroke-width:1"/>
+<text x="788.3333333333333" y="240.0" text-anchor="middle">Тенге в кошельке = 5656.2431</text>
+<rect x="636.6666666666666" y="260" width="303.3333333333333" height="50" style="fill:#cbb;stroke:black;stroke-width:1"/>
+<text x="788.3333333333333" y="290.0" text-anchor="middle">Долларов в кошельке = 11.7748</text>
+<rect x="636.6666666666666" y="310" width="303.3333333333333" height="50" style="fill:#cbb;stroke:black;stroke-width:1"/>
+<text x="788.3333333333333" y="340.0" text-anchor="middle">Курс рупии = 0.7123</text>
+<rect x="636.6666666666666" y="360" width="303.3333333333333" height="50" style="fill:#cbb;stroke:black;stroke-width:1"/>
+<text x="788.3333333333333" y="390.0" text-anchor="middle">Рупий в кошельке = 935.0321</text>
+</svg>
